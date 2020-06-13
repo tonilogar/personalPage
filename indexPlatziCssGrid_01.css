@@ -1,0 +1,238 @@
+body {
+    margin: 2px;
+    font-family: 'Lato', sans-serif;
+    background-color: teal;
+}
+.container {
+    display: grid;
+    grid-template: 52px 52px 52px 52px 52px 52px 52px / 52px 1fr 1fr 1fr 52px ;
+    height: 100vh;
+    grid-template-areas: 
+    " user      search    search    search    language"
+    " user-menu article01 article01 article01 language-menu"
+    " user-menu article02 article02 article02 language-menu"
+    " .         article03 article03 article03 ."
+    " .         article04 article04 article04 ."
+    " .         article05 article05 article05 ."
+    " .         footer    footer    footer .";
+    grid-gap: 5px;
+}
+
+.header-user-img {
+    grid-area: user;
+    width: 58px;
+}
+.header-user-img:hover{
+    cursor: pointer;
+}  
+.header-user:hover ul, ul:hover {  
+    display: block;  
+}
+.header-user-ul {
+    grid-area: user-menu;
+    list-style: none;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5px;
+}
+.header-user-li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.header-user-li:hover a{
+    text-decoration: underline;
+}
+.header-user-li a {
+    text-decoration: none;
+}/* user search */
+.header-search-input {
+    grid-area: search;
+    height: 40px;
+    border: solid cadetblue;
+    border-radius: 25px;
+    margin-top: 5px;
+} 
+
+.header-language-img {
+    grid-area: language;
+    width: 58px;
+}
+.header-language-img:hover{
+    cursor: pointer;
+}  
+.header-language:hover ul, ul:hover {  
+    display: block;  
+}   
+.header-language-ul {
+    grid-area: language-menu;
+    width: 58px;
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.header-language-li {
+    width: 58px;
+    /*padding: 0px 0px 0px 7px ;*/
+}
+.header-language-li:hover img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.article01 {
+    grid-area: article01; 
+    background-color: rgb(0, 162, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.article01 a {
+    color: white;
+    text-decoration: none;
+}
+.article01 a:hover {
+    text-decoration: underline;
+}
+.article02 {
+    grid-area: article02;
+    background-color: rgb(0, 162, 255); 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.article02 a {
+    color: white;
+    text-decoration: none;
+}
+.article02 a:hover {
+    text-decoration: underline;
+}
+.article03 {
+    grid-area: article03;
+    background-color: rgb(0, 162, 255); 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.article03 a {
+    color: white;
+    text-decoration: none;
+}
+.article03 a:hover {
+    text-decoration: underline;
+}
+.article04 {
+    grid-area: article04;
+    background-color: rgb(0, 162, 255); 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.article04 a {
+    color: white;
+    text-decoration: none;
+}
+.article04 a:hover {
+    text-decoration: underline;
+}
+.article05 {
+    grid-area: article05;
+    background-color: rgb(0, 162, 255); 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.article05 a {
+    color: white;
+    text-decoration: none;
+}
+.article05 a:hover {
+    text-decoration: underline;
+}
+.footer {
+    grid-area: footer;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+    
+    /* cuando la pantalla sea mas grande de 320px a 480px*/
+    @media screen and (min-width: 320px) {
+        .container {
+            grid-template: 60px 60px 60px 60px 60px 60px 60px / 60px 1fr 1fr 1fr 60px ;
+            grid-template-areas: 
+            " user      search    search    search    language"
+            " user-menu article01 article01 article01 language-menu"
+            " user-menu article02 article02 article02 language-menu"
+            " .         article03 article03 article03 ."
+            " .         article04 article04 article04 ."
+            " .         article05 article05 article05 ."
+            " .         footer    footer    footer .";
+          }
+          .header-user-img {
+            margin: 0px;
+          }
+        .header-language-img {
+            margin: 0px;
+          }
+          .header-search-input {     
+            margin-top: 10px;
+        } 
+    }
+    /* cuando la pantalla sea mas grande de 480px a 768px*/
+    @media screen and (min-width: 480px) {
+        .container {
+            grid-template: 92px 92px 92px 92px 92px 92px 92px / 92px 1fr 1fr 1fr 92px ;
+            grid-template-areas: 
+            " user      search    search    search    language"
+            " user-menu article01 article01 article01 language-menu"
+            " user-menu article02 article02 article02 language-menu"
+            " .         article03 article03 article03 ."
+            " .         article04 article04 article04 ."
+            " .         article05 article05 article05 ."
+            " .         footer    footer    footer .";
+          }
+          .header-user-img {
+            margin: 15px 15px 0px 15px;
+          }
+        .header-language-img {
+            margin: 15px 15px 0px 15px;
+          }
+          .header-search-input {     
+            margin-top: 20px;
+        } 
+        .header-language-li {
+            padding: 0px 0px 0px 7px ;
+        }
+        .header-user-li a {
+            padding: 10px;
+        }
+    }
+     /* cuando la pantalla sea mas grande de 768px a 1024px*/
+     @media screen and (min-width: 768px) {
+        .container {
+            grid-template: 92px 92px 92px 92px 92px 92px 92px / 92px 1fr 1fr 1fr 92px ;
+            grid-template-areas: 
+            " user      search    search    search    language"
+            " user-menu article01 article01 article01 language-menu"
+            " user-menu article02 article02 article02 language-menu"
+            " .         article03 article03 article03 ."
+            " .         article04 article04 article04 ."
+            " .         article05 article05 article05 ."
+            " .         footer    footer    footer .";
+          }
+    }

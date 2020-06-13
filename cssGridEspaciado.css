@@ -1,0 +1,33 @@
+body{
+    font-family: Arial;
+    
+}
+
+.containerHeader {
+    display: grid;
+    /*grid-template-columns: 25% 200px 25%;
+    grid-template-rows: 300px 150px;*/
+    grid-template: 300px 100px 30px / 50% 200px 100px;
+    /*grid-column-gap: 30px ;
+    grid-row-gap: 50px ;
+    grid-gap: filas / columnas*/
+    grid-gap:100px 100px;
+}
+.item{
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+    
+
+}
+.item:nth-of-type(4) {
+    background-color: rgb(117, 117, 211);
+    overflow: auto;
+    display: grid;
+    grid-template: 50px 50px 50px / 50px 50px 50px;   
+    grid-gap:10px 5px;      
+}
+
+.item .item{
+    background-color: lightgreen;
+}

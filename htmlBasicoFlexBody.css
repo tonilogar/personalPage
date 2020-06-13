@@ -1,0 +1,114 @@
+/*El html ocupa todo el espacio y no tiene ningun borde*/
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+/*El body ocupa todo el espacio y no tiene ningun borde,activo flex "display: flex" 
+y el eje del contenido es flex-direction: column, body es el contenedor de header, .mai y footer*/
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+    flex-direction: column;
+}
+/*header es el primer elemento del contenedor body, ocupa el 10% del contenedor body
+no tiene ningun borde, activo flex "display: flex" y el eje del contenido es flex-direction: row
+header es el contenedor de .header-01, .header-01 y .header-01 */
+header {
+	background: rgb(255, 0, 0);
+	margin: 0px;
+	padding: 0px;
+	flex: 10%;
+	order: 1;
+	display: flex;
+	flex-direction: row;
+}
+/* .header-01 es el primer elemento del contenedor header  */
+.header-01 {
+    background: rgb(255, 204, 204);
+    flex: 25%;
+	order: 1; 
+}
+/* .header-02 es el segundo elemento del contenedor header  */
+.header-02 {
+    background: rgb(220, 255, 204); 
+    flex: 25%;
+	order: 2; 
+}
+/* .header-03 es el tercer elemento del contenedor header  */
+.header-03{
+    background: rgb(204, 207, 255);
+    flex: 25%;
+	order: 3;
+}
+/* .header-04 es el cuarto elemento del contenedor header  */
+.header-04 {
+    background: rgb(95, 86, 86);
+    flex: 25%;
+	order: 4; 
+}
+/*.main es el segundo elemento del contenedor body, ocupa el 80% del contenedor body
+no tiene ningun borde, activo flex "display: flex" y el eje del contenido es flex-direction: row
+.main es el contenedor de .main-article, .main-nav y .main-aside */
+.main {
+	background: rgb(0, 255, 0);
+	margin: 0px;
+	padding: 0px;
+	flex: 80%;
+	order: 2;
+	display: flex;
+	flex-direction: row;
+}
+/* .main-article es el primer elemento del contenedor .main */
+.main-article {
+	background: #CFC;
+	flex: 60%;
+	order: 2;
+}
+/* .main-nav es el segundo elemento del contenedor .main */
+.main-nav {
+	background: #CCF;
+	flex: 20%;
+	order: 1;
+}
+/* .main-aside es el tercer elemento del contenedor .main */
+.main-aside {
+	background: #CCF;
+	flex: 20%;
+	order: 3;
+}
+/*.footer es el tercer elemento del contenedor body, ocupa el 10% del contenedor body
+no tiene ningun borde, activo flex "display: flex" y el eje del contenido es flex-direction: row
+.footer es el contenedor de .footer-terms , .footer-privacy y .footer-helpt */
+.footer {
+    background: rgb(255, 0, 0);
+	margin: 0px;
+	padding: 0px;
+	flex: 10%;
+	order: 3;
+    display: flex;
+	flex-direction: row;   
+}
+/* .footer-terms es el primer elemento del contenedor .footer */
+.footer-terms {
+    background-color: rgb(36, 23, 8);
+    flex: 25%;
+	order: 1;
+}
+/* .footer-privacy es el primer elemento del contenedor .footer */
+.footer-privacy {
+    background-color: rgb(197, 196, 255);
+    flex: 25%;
+	order: 2;
+}
+/* .footer-helpt es el primer elemento del contenedor .footer */
+.footer-helpt {
+    background-color: rgb(255, 196, 204);
+    flex: 25%;
+	order: 3;
+}
+

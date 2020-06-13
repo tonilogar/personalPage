@@ -1,0 +1,98 @@
+    html{
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+    }
+    body {
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+    }
+    .container {
+      display: grid;
+      grid-template: 64px 64px 64px 64px 64px 64px 64px /  64px 64px 64px ;
+            grid-template-areas: " . header  . "
+                                 " aside article nav "
+                                 " . article . "
+                                 " . article . "
+                                 " . article . "
+                                 " . article . "
+                                 " footer footer footer ";
+      
+    }
+    
+    .header {
+      grid-area: header;
+	  background-color: red;
+    }
+    .nav {
+      grid-area: nav;
+	  background-color: green;
+    }
+    .article {
+      grid-area: article;
+	  background-color: green;
+    }
+	.aside {
+      grid-area: aside;
+	  background-color: green;
+    }
+    .footer {
+      grid-area: footer;
+      background-color: blue;
+    }
+
+    
+    
+    /* cuando la pantalla sea mas grande de 320px a 480px*/
+    @media screen and (min-width: 320px) {
+        .container {
+            grid-template: 64px 64px 64px 64px 64px 64px 64px / 64px 64px 64px 64px 64px ;
+            grid-template-areas: ". . header  . ."
+                                 ". aside article nav ."
+                                 ". . article . ."
+                                 ". . article . ."
+                                 ". . article . ."
+                                 ". . article . ."
+                                 ". footer footer footer .";
+          }
+    }
+    /* cuando la pantalla sea mas grande de 480px a 768px*/
+    @media screen and (min-width: 480px) {
+        .container {
+            grid-template: 64px 64px 64px 64px 64px 64px 64px / 64px 64px 64px 64px 64px ;
+            grid-template-areas: ". . header  . ."
+                                 ". aside article nav ."
+                                 ". aside article . ."
+                                 ". aside article . ."
+                                 ". . article . ."
+                                 ". . article . ."
+                                 ". footer footer footer .";
+          }
+    }
+     /* cuando la pantalla sea mas grande de 768px a 1024px*/
+    @media screen and (min-width: 768px) {
+      .container {
+        grid-template: 64px 64px 64px 64px 64px 64px 64px / 64px 64px 64px 64px 64px ;
+        grid-template-areas: ". . header  . ."
+                             ". aside article nav ."
+                             ". aside article . ."
+                             ". aside article . ."
+                             ". . article . ."
+                             ". . article . ."
+                             ". . footer . .";
+      }
+}
+/* cuando la pantalla sea mas grande de 1024px*/
+    @media screen and (min-width: 1024px) {
+      .container {
+        grid-template: 64px 64px 64px 64px 64px 64px 64px / 64px 64px 64px 64px 64px ;
+        grid-template-areas: ". . header  . ."
+                             ". aside article nav ."
+                             ". aside article . ."
+                             ". aside article . ."
+                             ". . article . ."
+                             ". . article . ."
+                             "footer footer footer footer .";
+      }
+}

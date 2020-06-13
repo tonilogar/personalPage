@@ -1,0 +1,87 @@
+/*header///////////////////*/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	width: 100%;
+	height: 120px;
+	margin: 0px;
+    padding: 0px;
+    display: flex;
+	flex-flow: row; 
+}
+
+.header-01 {
+    background: rgb(255, 204, 204);
+    flex: 25%;
+	order: 1;
+}
+
+.header-02 {
+    background: rgb(220, 255, 204); 
+    flex: 25%;
+	order: 2;
+}
+
+
+.header-03{
+    background: rgb(204, 207, 255);
+    flex: 25%;
+	order: 3;
+}
+
+.header-04 {
+    background: rgb(95, 86, 86);
+    flex: 25%;
+	order: 4;
+}
+
+.main {
+   height: 80%;
+   display: flex;
+   flex-flow: row;
+}
+.main-article {
+	background: #CFC;
+	flex: 60%;
+	order: 2;
+}
+.main-nav {
+	background: #CCF;
+	flex: 20%;
+	order: 1;
+}
+.main-aside {
+	background: #CCF;
+	flex: 20%;
+	order: 3;
+}
+.main-footer {
+    
+	width: 100%;
+	height: 100px;
+	margin: 0px;
+    padding: 0px;
+    display: flex;
+	flex-flow: row;    
+}
+.main-footer-terms {
+    background-color: bisque;
+    flex: 25%;
+	order: 1;
+}
+.main-footer-privacy {
+    background-color: rgb(197, 196, 255);
+    flex: 25%;
+	order: 1;
+}
+.main-footer-helpt {
+    background-color: rgb(255, 196, 204);
+    flex: 25%;
+	order: 1;
+}
+

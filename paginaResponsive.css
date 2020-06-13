@@ -1,0 +1,109 @@
+
+body {
+    font: 24px sans-serif;
+    background: #999999;
+}
+header {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    height: 100px;
+    border: 1px solid #eebb55;
+    border-radius: 7pt;
+    background: #ffeebb;
+    display: flex;
+	flex-direction: row;
+    
+}
+.header-language {
+    order: 1; 
+}
+
+.header-language-img {
+    width: 85px;
+    height: 85px;
+	padding: 10px;
+}
+.header-language-li {
+    width: 85px;
+	height: 85px;	
+}
+.header-language-img:hover {
+    cursor: pointer;
+}
+.header-language-ul {
+	padding-left: 10px;
+    border: 0px ;
+	margin: 0px;
+    list-style: none;
+	
+}
+.header-language:hover ul, ul:hover {  
+    display: block;  
+}
+.header-search{
+	order: 3;
+}
+.main {
+    min-height: 800px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row;
+}
+.main > article {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #cccc33;
+    border-radius: 7pt;
+    background: #dddd88;
+    flex: 3 1 60%;
+    order: 2;
+}
+  
+.main > nav {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #8888bb;
+    border-radius: 7pt;
+    background: #ccccff;
+    flex: 1 6 20%;
+    order: 1;
+}
+  
+.main > aside {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #8888bb;
+    border-radius: 7pt;
+    background: #ccccff;
+    flex: 1 6 20%;
+    order: 3;
+}
+ 
+footer {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    border: 1px solid #eebb55;
+    border-radius: 7pt;
+    background: #ffeebb;
+}
+ 
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {  
+.main, #page {
+    flex-flow: column;
+}
+
+.main > article, .main > nav, .main > aside {
+/* Return them to document order */
+    order: 0;
+}
+  
+.main > nav, .main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+}
+}

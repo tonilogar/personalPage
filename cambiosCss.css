@@ -1,0 +1,315 @@
+body {
+    margin: 5px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(179, 179, 179);
+    
+}
+.container {
+  grid-template: 60px 20px 20px 20px 20px 20px 20px 20px 20px 10px 50px 20px 50px 60px 30px 20px / 300px ;
+  grid-template-areas: 
+  "  header "
+  "  labelUserName "
+  "  inputUserName "
+  "  labelPassword "
+  "  inputPassword "
+  "  labelConfirmPassword "
+  "  inputConfirmPassword "
+  "  labelEmail "
+  "  inputEmail " 
+  "  .  "           
+  "  buttonCreateUser "
+  "  createSMedia "
+  "  social "
+  "  buttonHome "
+  "  . "
+  "  footer ";
+}
+
+
+.header{
+  grid-area: header;
+  font-size: 10px;
+  padding-left: 10px;
+}
+.labelUserName{
+  grid-area: labelUserName;
+  padding: 0px 10px 0px 2px;
+}
+.inputUserName{
+  grid-area: inputUserName;
+}
+.labelPassword{
+  grid-area: labelPassword;
+  padding: 0px 10px 0px 2px;
+}
+.inputPassword{
+  grid-area: inputPassword;
+}
+.labelConfirmPassword{
+  grid-area: labelConfirmPassword;
+  padding: 0px 10px 0px 2px;
+}
+.inputConfirmPassword{
+  grid-area: inputConfirmPassword;
+}
+.labelEmail{
+  grid-area: labelEmail;
+  padding: 0px 10px 0px 2px;
+}
+.inputEmail{
+  grid-area: inputEmail;
+}
+.createUserSocialmedia{
+  grid-area: createSMedia;
+}
+.social{
+  grid-area: social;
+}
+.buttonCreateUser{
+  grid-area: buttonCreateUser;
+  border-radius: 6px;
+  border-bottom: 2px solid #7f7f80;
+}
+.buttonCreateUser:hover{
+  cursor: pointer;
+}  
+.buttonHome{
+  grid-area: buttonHome;
+  border-radius: 6px;
+  border-bottom: 2px solid #7f7f80;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+.buttonHome a{
+  color: black;
+  text-decoration: none;
+}
+.buttonHome:hover{
+  cursor: pointer;
+} 
+.fa {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  margin: 10px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: rgb(165, 165, 165);
+  color: white;
+  border-bottom: 2px solid #2c2c2c;
+}
+.fa-twitter {
+  background: rgb(165, 165, 165);
+  color: white;
+  border-bottom: 2px solid #2c2c2c;
+}
+.fa-google {
+  background: rgb(165, 165, 165);
+  color: white;
+  border-bottom: 2px solid #2c2c2c;
+}
+.fa-instagram {
+  background: rgb(165, 165, 165);
+  color: white;
+  border-bottom: 2px solid #2c2c2c;
+}
+.footer{
+  grid-area: footer;
+}
+.footer a{
+  color: black;
+  text-decoration: none;
+}
+.footer a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+} 
+
+
+
+    /* cuando la pantalla sea mas grande de 320px a 480px*/
+    @media screen and (min-width: 320px) {
+   
+        .container {
+            grid-template: 60px 20px 20px 20px 20px 20px 20px 20px 20px 10px 50px 20px 50px 60px 30px 20px / 160px 160px ;
+            grid-template-areas: 
+            "  header header "
+            "  labelUserName labelUserName "
+            "  inputUserName inputUserName "
+            "  labelPassword labelPassword "
+            "  inputPassword inputPassword "
+            "  labelConfirmPassword labelConfirmPassword "
+            "  inputConfirmPassword inputConfirmPassword "
+            "  labelEmail labelEmail "
+            "  inputEmail inputEmail " 
+            "  . . "           
+            "  buttonCreateUser buttonCreateUser "
+            "  createSMedia createSMedia "
+            "  social social "
+            "  buttonHome . "
+            "  . . "
+            "  footer   footer ";
+          }
+          .header{
+            font-size: 12px;
+            padding-left: 50px;
+          }
+          .labelUserName{
+            padding: 0px 10px 0px 10px;
+          }
+          .inputUserName{
+            width: 290px;
+          }
+          .labelPassword{
+            padding: 0px 10px 0px 10px;
+          }
+          .inputPassword{
+            width: 290px;
+          }
+          .labelConfirmPassword{
+            padding: 0px 10px 0px 10px;
+          }
+          .inputConfirmPassword{
+            width: 290px;
+          }
+          .labelEmail{
+            padding: 0px 10px 0px 10px;
+          }
+          .inputEmail{
+            width: 290px;
+          }
+          .buttonCreateUser{
+            width: 295px;
+          }
+          .createUserSocialmedia{
+            font-size: 17px;
+            padding-left: 7px;
+          }
+          .createUserSocialmedia p{
+            margin: 0px 0px 0px 0px;
+          }
+          .social{
+            grid-area: social;
+          }
+          .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 20px;
+            margin: 10px 2px;
+          }
+          .buttonHome{
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+          }
+          .footer{
+            grid-area: footer;
+          }
+        } 
+    
+    /* cuando la pantalla sea mas grande de 480px a 768px
+    @media screen and (min-width: 480px) {
+        .container {
+            grid-template: 60px 20px 20px 20px 20px 20px 20px 20px 20px 10px 50px 20px 50px 60px 30px 20px / 70px 1fr 1fr 70px ;
+            grid-template-areas: 
+            "  . header header . "
+            "  . labelUserName labelUserName .  "
+            "  . inputUserName inputUserName .  "
+            "  . labelPassword labelPassword .  "
+            "  . inputPassword inputPassword .  "
+            "  . labelConfirmPassword labelConfirmPassword .  "
+            "  . inputConfirmPassword inputConfirmPassword .  "
+            "  . labelEmail labelEmail .  "
+            "  . inputEmail inputEmail .  " 
+            "  . . . .  "           
+            "  . buttonCreateUser buttonCreateUser .  "
+            "  . createSMedia createSMedia .  "
+            "  . social social .  "
+            "  . buttonHome . .  "
+            "  . . . .  "
+            "  . footer   footer .  ";
+          }
+          .header{
+            font-size: 12px;
+            padding-left: 50px;
+          }
+          .labelUserName{
+            padding: 0px 10px 0px 10px;
+          }
+          .inputUserName{
+            width: 290px;
+          }
+          .labelPassword{
+            padding: 0px 10px 0px 10px;
+          }
+          .inputPassword{
+            width: 290px;
+          }
+          .labelConfirmPassword{
+            padding: 0px 10px 0px 10px;
+          }
+          .inputConfirmPassword{
+            width: 290px;
+          }
+          .labelEmail{
+            padding: 0px 10px 0px 10px;
+          }
+          .inputEmail{
+            width: 290px;
+          }
+          .buttonCreateUser{
+            width: 295px;
+          }
+          .createUserSocialmedia{
+            font-size: 17px;
+            padding-left: 7px;
+          }
+          .createUserSocialmedia p{
+            margin: 0px 0px 0px 0px;
+          }
+          .social{
+            grid-area: social;
+          }
+          .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 20px;
+            margin: 10px 2px;
+          }
+          .buttonHome{
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+          }
+          .footer{
+            grid-area: footer;
+          }
+        } 
+        */
+     /* cuando la pantalla sea mas grande de 768px a 1024px
+     @media screen and (min-width: 768px) {
+        .container {
+            grid-template: 92px 92px 92px 92px 92px 92px 92px / 92px 1fr 1fr 92px ;
+            grid-template-areas: 
+            " . header header . "
+            " . labelUserName inputUserName  . "
+            " . labelPassword inputPassword  . "
+            " . labelConfirmPassword inputConfirmPassword . "
+            " . labelEmail inputEmail . "
+            " . buttonCreateUser buttonCreateUser . "
+            " . . . . "
+            " . . . . "
+            " . . . . "
+            " . footer   footer  . ";
+          }
+    }
+    */

@@ -1,0 +1,175 @@
+html{
+    background-color: khaki;
+    height: 100%;
+    width: 100%;
+    
+}
+body{
+    
+}
+.container{
+     
+    display: block;
+    
+}
+.box{
+    
+    border: 1px solid red;
+    width: 99px;
+    height: 99px;
+    padding: 2px;
+    
+}
+.container0{
+    border: 1px solid blue;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;   
+}
+.box0{
+    margin: 3px;
+    border: 1px solid#FF0000;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;/*respeta el tamaño de los elemento y no se encogen*/
+}
+
+.containerq{
+    border: 1px solid blue;  
+    display: flex;
+    flex-direction: column; 
+}
+.boxq{
+    margin: 3px;
+    border: 1px solid red;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;/*respeta el tamaño de los elemento y no se encogen*/
+    align-items: center;
+}
+.container00{
+    border: 1px solid blue;  
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.boxa{
+    margin: 3px;
+    border: 1px solid red;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;/*respeta el tamaño de los elemento y no se encogen*/
+    align-self: flex-start;
+}
+.boxb{
+    margin: 3px;
+    border: 1px solid red;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;/*respeta el tamaño de los elemento y no se encogen*/
+    
+}
+.boxc{
+    margin: 3px;
+    border: 1px solid red;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;/*respeta el tamaño de los elemento y no se encogen*/
+    align-self: flex-end;
+}
+
+.container1{  
+    border: 1px solid blue; 
+    display: block;
+}
+.box1{
+    margin: 3px;
+    border: 1px solid red;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+}
+
+.container2{  
+    
+}
+.img{
+    display: inline-block;
+    width: 200px;
+}
+
+.container3{  
+    
+}
+.search1{
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    border: 1px solid red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+figure{
+    /* display: inline-block; */
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+
+}
+
+.search{
+    /* border: 1px solid blue; */
+    width: 300px;
+    height: 50px;
+
+    padding: 0px;
+    border: 0px;
+}
+.margen{
+    display: block;
+}
+.espacio1{
+    border: 1px solid blue;
+    width: 300px;
+    height: 30px;
+    background-color: hotpink;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+

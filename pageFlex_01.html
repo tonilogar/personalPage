@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flex </title>
+<head>
+<style>
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#main {
+   height: 80%;
+   display: -webkit-flex;
+   display: flex;
+   flex-flow: row;
+}
+#main article {
+	background: #CFC;
+	flex: 3 1 60%;
+	order: 2;
+}
+#main nav {
+	background: #CCF;
+	flex: 1 6 20%;
+	order: 1;
+}
+#main aside {
+	background: #CCF;
+	flex: 1 6 20%;
+	order: 3;
+}
+header, footer {
+	display: block;
+	min-height: 10%;
+	background: #FC6;
+}
+
+</style>
+</head>
+<body>
+<header>
+    <a href="/" class="home" >Home</a>
+    <img class="header_logo" src="./images/myLogo.gif" alt="logo hiper cubo">
+    <input type="text" class="header_search" placeholder="search within the page...">
+    <div class="header_language">
+      <div class="header_language-options">
+      <img src="./images/user-icon.png" alt="select language">
+      </div>
+        <ul>
+          <li> <a href="/"><img src="./images/user-icon.png" alt="select English"></a></li>
+          <li> <a href="/"><img src="./images/user-icon.png" alt="select English"></a></li>
+          <li> <a href="/"><img src="./images/user-icon.png" alt="select English"></a></li>
+      </ul>
+    </div>
+    <div class="header_user">
+      <div class="header_user-options">
+      <img src="./images/user-icon.png" alt="">
+      <p>User</p>
+      </div>
+        <ul>
+          <li><a href="/">Sign in</a></li>
+          <li><a href="/">Sign out</a></li>
+          <li><a href="/">Log in</a></li>
+      </ul>
+    </div>
+</header>
+<div id='main'>
+  <article>article</article>
+  <nav>nav</nav>
+  <aside>aside</aside>
+ </div>
+<footer>footer</footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.container {
+    grid-template-areas: ". . header  . ."
+                         ". aside article nav ."
+                         ". . article . ."
+                         ". . article . ."
+                         ". . article . ."
+                         ". . article . ."
+                         ". footer footer footer .";
+  }

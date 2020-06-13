@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>主頁</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="indexChinese.css"> 
+</head>
+<body>
+  <div class="container">
+<!-- header -->
+        <!-- header-user --> 
+        <div class="header-user">     
+            <img class="header-user-img" src="./images/user-icon.png" alt="User image">
+                <ul class="header-user-ul">
+                     <li class="header-user-li"><a href="indexCreateUserChinese.html">報名</a></li>
+                    <li class="header-user-li"><a href="indexChinese.html">出口</a></li>
+                    <li class="header-user-li"><a href="indexLoginUserChinese.html">登錄</a></li>
+                </ul>
+        </div>
+        <!-- header-user -->
+        <!-- header-search -->        
+        <input class="header-search-input" type="text"  placeholder="   在頁面內搜索   ">
+        <!-- header-search -->
+        <!-- header-language -->
+        <div class="header-language">  
+            <img class="header-language-img" src="./images/Spain-icon.png" alt="language image">
+                <ul class="header-language-ul">
+                  <li class="header-language-li"><img class="header-language-li" onclick="homeEnglish()" src="./images/United-Kingdom-icon.png" alt="English language"></li>
+                  <li class="header-language-li"><img class="header-language-li" onclick="homeChinese()" src="./images/China-icon.png" alt="Chinese language"></li>
+                  <li class="header-language-li"><img class="header-language-li" onclick="homeSpanish()" src="./images/Spain-icon.png" alt="Spanish language"></li>
+                </ul>
+            </div>       
+        <!-- header-language -->
+
+	    <!-- section -->
+		<!--<nav class="section-nav"><p>nav</p></nav> -->
+		<!-- article -->
+            <div class="article01">
+                <a href="/">關於我</a>
+              </div>
+              <div class="article02">
+                <a href="/">增強現實</a>
+              </div>
+              <div class="article03">
+                <a href="/">虛擬現實</a>
+              </div>
+              <div class="article04">
+               <a href="/">製圖瀏覽器</a>
+             </div>
+             <div class="article05">
+               <a href="/">我的東西 ..</a>
+             </div>
+        <!-- article -->
+        <!--<aside class="section-aside"><p>aside</p></aside> -->	
+        <!-- section -->
+        <footer class="footer">
+            <a href="/">條款</a>
+            <a href="/">私隱權 </a>
+            <a href="/">幫忙</a>
+        </footer>
+  </div>
+  <script>
+    function homeSpanish(){
+      window.location = "index.html";
+    }
+    function homeEnglish(){
+      window.location = "indexEnglish.html";
+    }
+    function homeChinese(){
+      window.location = "indexChinese.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.main {
+    display: grid;
+    font-family: sans-serif;
+    height: 100vh;
+    grid-gap: 10px;
+}
+.up{
+    position: absolute;
+    left: 100px; 
+    top: 250px; 
+    width: 300px;
+    height: 500px;
+    z-index: 1;
+    background-color: red;
+}
+/* Nombrar las areas */
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+.nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+.asideLeft {
+    grid-area: izquierda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+.article {
+    grid-area: contenido;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+.asideRight {
+    grid-area: derecha;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+/* cuando la pantalla es menor a 320px */
+@media screen and (max-width: 320px) 
+{
+    .main {
+        grid-template: .5fr 2fr 2fr 2fr .5fr / .2fr 1fr ;
+        grid-template-areas:
+            "nav       header"
+            "nav       izquierda"
+            "contenido contenido "
+            "derecha   derecha "
+            "footer    footer ";
+    }
+}
+/* cuando la pantalla desde 320px hasta 480px*/
+@media screen and (min-width: 320px) and (max-width: 480px) 
+{
+    .main {
+        grid-template: 1fr 1fr 12fr 1fr / 1fr 3fr 1fr;
+        grid-template-areas:
+            "header    header    header"
+            "nav       nav       nav"
+            "izquierda contenido derecha"
+            "footer    footer    footer";
+    }
+}
+/* cuando la pantalla desde 480px hasta 768px*/
+@media screen and (min-width: 480px) and (max-width: 768px) 
+{
+    .main {
+        grid-template: 1fr 1fr 12fr 1fr / 1fr 1fr 3fr 1fr 1fr;
+        grid-template-areas:
+            ". header    header    header . "
+            ". nav       nav       nav . "
+            ". izquierda contenido derecha . "
+            ". footer    footer    footer . ";
+    }
+}
+/* cuando la pantalla desde 480px hasta 768px*/
+@media screen and (min-width: 768px) and (max-width: 1024px) 
+{
+    .main {
+        grid-template: 1fr 1fr 12fr 1fr / 1fr 1fr 3fr 1fr 1fr;
+        grid-template-areas:
+            "header    header    header    .       . "
+            ".         .         nav       nav     nav "
+            "izquierda izquierda contenido derecha derecha "
+            ".         .         footer    derecha derecha ";
+    }
+}
+
+/* cuando la pantalla desde mayor a 1024*/
+@media screen and (min-width: 1024px) 
+{
+    .main {
+        grid-template: 1fr 1fr 12fr 1fr / 1fr 1fr 3fr 1fr 1fr;
+        grid-template-areas:
+            "izquierda    header    header    header    derecha "
+            "izquierda    nav       nav       nav       derecha "
+            "izquierda    .         contenido .         derecha "
+            "izquierda    .         .         footer    footer ";
+    }
+}
+
+
+
+
+

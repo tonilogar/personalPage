@@ -1,0 +1,100 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    margin: 0px;
+    background-image: url(./images/fondo.jpg);
+    grid-template-columns: minmax(auto, 320px);
+    justify-content: center;
+}
+
+.header-language-img {
+    width: 150px;
+}
+.header-language-ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.header-language-li {
+    width: 150px;
+    list-style: none;
+    display: none;
+}
+.header-search {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    border: 10px ;
+    margin: 20px;
+    border-radius: 35px;  
+}
+.header-user-img {
+    width: 150px;
+}
+.header-user-ul {
+    display: none; 
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.header-user-ul a {
+    text-decoration: none;
+}
+
+.article-work {
+    background-color: rgb(122, 122, 126);
+    opacity: 0.5;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #cccc33;
+    border-radius: 7pt;
+    margin: 10px;	
+}
+.article-work a{
+   color: white;
+   text-decoration: none;
+}
+.aside, aside a {
+    color: white;
+    text-decoration: none;
+}
+.footer, footer a {
+    color: white;
+    text-decoration: none; 
+    padding: 0px;
+    padding-left: 30px;
+    margin: 0px;
+}
+.hero {
+    color: rgb(104, 97, 97);
+    display:grid;  
+    grid-template-columns: minmax(auto,1024); 
+    justify-content: center;
+}
+.hero-container {
+    color: rgb(104, 97, 97);
+    display:grid;  
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "header-language header-search header-search header-search header-user   "
+                         ". article article article ."
+                         ". article article article ."
+                         ". article article article ."
+                         ". footer footer footer .";
+}
+.header-language {
+    grid-area: header-language;
+}
+.header-search {
+    grid-area: header-search;
+}
+.header-user {
+    grid-area: header-user;
+}
+.article {
+    grid-area: article;
+}
+.footer {
+    grid-area: footer;
+}

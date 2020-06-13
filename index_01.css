@@ -1,0 +1,228 @@
+html {
+    height:100%;
+    width:100%;
+}
+body {
+    font: 24px Helvetica;
+    background-image: url(./images/fondo.jpg);
+    margin: 0px;
+    padding: 0px;
+    background-size:100% 100%;
+}
+  
+header{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+    /*border: 1px solid #eebb55;
+    border-radius: 7pt;
+    background: #ffeebb;*/
+    display: flex;
+	flex-direction: row;
+}
+.header-user {
+    width: 90px;
+	order: 1; 
+}
+.header-user:hover{
+    cursor: pointer;
+}
+.header-user-img{
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+	margin-left: 10px;
+}
+.header-user-ul{
+    position: absolute;
+    z-index:1;
+	display: none;
+	list-style: none;
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+    width: 100px;
+	text-align: left; 	
+}
+.header-user:hover ul, ul:hover {  
+    display: block;  
+}
+.header-user-ul a{
+    text-decoration: none;
+}
+.header-user-li:hover a{
+    text-decoration: underline;
+}
+.header-user-li a {
+	color: white;
+	font-size: 25px;
+}
+.header-search{ 
+    order: 2;
+}
+.header-search-input{
+    height: 40px; 
+    padding: 10px;
+    border: solid cadetblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 35px;  
+}
+
+.header-language {
+    width: 100px;
+	order: 3; 
+}
+.header-language:hover{
+    cursor: pointer;
+}
+.header-language-img{
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+	margin-right: 0px;
+    margin-left: 20px;   
+}
+.header-language-li{
+    height: 60px;
+    width: 60px;
+    padding-bottom: 5px;
+}
+.header-language-ul{
+    position: absolute;
+    z-index:1;
+	display: none;
+	list-style: none;
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+    width: 100px;
+	text-align: left; 	
+}
+.header-language:hover ul, ul:hover {  
+    display: block;  
+}
+
+.header-language-li:hover img{
+    width: 62px;
+    height: 62px;
+}
+.header-language-li a {
+	color: white;
+}
+
+/* .header-04 es el cuarto elemento del contenedor header  */
+
+.main {
+   min-height: 800px;
+   margin: 0px;
+   padding: 0px;
+   display: flex;
+   flex-flow: row;
+   }
+ 
+.main article {
+   margin: 0px;
+   padding: 0px;
+   /*border: 1px solid #cccc33;
+   border-radius: 7pt;
+   background: #dddd88;*/
+   flex: 3 1 60%;
+   order: 2;
+   display: flex;
+   flex-flow: column;
+   }
+
+.trabajo {
+    background-color: rgb(2, 2, 235);
+    opacity: 0.5;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #cccc33;
+    border-radius: 7pt;
+    margin: 10px;	
+}
+.trabajo a{
+   text-decoration: none;
+}
+.trabajo a:hover{
+    text-decoration: underline;
+}
+ 
+.trabajo:hover {
+     opacity: 1;
+     cursor: pointer;
+
+}
+
+.main nav {
+   margin: 0px;
+   padding: 0px;
+    /*border: 1px solid #8888bb;
+   border-radius: 7pt;
+  background: #ccccff;*/
+   flex: 1 6 20%;
+   order: 1;
+   }
+.main aside {
+   margin: 0px;
+   padding: 0px;
+   /*border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;*/
+   flex: 1 6 20%;
+   order: 3;
+   }
+
+.main aside p, ul, a{
+    color: white;
+    text-decoration: none;
+}
+.main aside p{
+   padding-left: 20px;
+}
+.main aside a:hover{
+    text-decoration: underline;
+}
+
+
+    
+ 
+footer {
+   display: block;
+   margin: 0px;
+   padding: 0px;
+   /*border: 1px solid #eebb55;
+   border-radius: 7pt;
+   background: #312707;*/
+}
+footer a{
+    text-decoration: none;
+    padding: 10px;
+}
+footer a:hover{
+    text-decoration: underline;
+    }
+ 
+  /* Too narrow to support three columns */
+  @media all and (max-width: 1300px) {
+  
+.main, #page {
+   flex-flow: column;
+}
+
+.main > article, .main > nav, .main > aside {
+    /* Return them to document order */
+   order: 0;
+}
+.main aside ul{
+    padding-left: 60px;
+}  
+body {
+    font: 50px Helvetica;
+    background-size:190% 190%;
+    background-position: center;
+    background-position-y: 0px;
+}
+}

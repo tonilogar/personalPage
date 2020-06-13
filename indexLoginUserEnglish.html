@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid heqader main footer</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="indexLoginUser.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="images/logoTonilogar.gif" />
+</head>
+<body>
+  <form action="data/">
+  <div class="container">
+        <span class="header">     
+            <h1> Login </h1>
+        </span>
+  
+        <label class="labelUserName">  User name :  </label>
+        <input class="inputUserName" type="text">
+        <label class="labelPassword">  Password : </label>
+        <input class="inputPassword" type="password" placeholder="********" >
+        <input class="buttonLogin" type="submit" value="Login">
+        <label class="labelFPassword">  <a href="indexForgotPasswordEnglish.html">Forgot password?</a>  </label>
+        
+        <button class="buttonHome"  onclick="home()" type="button"><a href="indexEnglish.html">Home</a></button>
+          <img class="logo" src="./images/logoTonilogar.gif" alt="Logo">   
+        <footer class="footer">
+            <a href="/">Terms</a>
+            <a href="/">Privacy   </a>
+            <a href="/">helpt</a>
+        </footer>
+      
+  </div>
+</form>
+  <script>
+    function home(){
+      window.location = "indexEnglish.html";
+    }
+  </script>
+</body>
+</html>

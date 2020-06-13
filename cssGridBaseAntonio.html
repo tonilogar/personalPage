@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid heqader main footer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <style>
+    html{
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+      /*display: flex;
+      align-items: center;
+      justify-content: space-around;*/
+    }
+    body {
+      font-family: Arial;
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+    }
+    
+    .main
+    .header {
+    grid-area: header;
+    background-color: red;
+    width: 100%;
+    }
+    
+    .nav {
+      grid-area: nav;
+	  background-color: green;
+    }
+    .article {
+      grid-area: article;
+	  background-color: green;
+    }
+	.aside {
+      grid-area: aside;
+	  background-color: green;
+    }
+    .footer {
+      grid-area: footer;
+      background-color: blue;
+    }
+  </style>
+  <div class="container">
+    <header class="header">header</header>
+	    <nav class="nav">nav</nav>
+	    <article class="article">article</article>
+      <aside class="aside">aside</aside>	
+    <footer class="footer">footer</footer>
+  </div>
+</body>
+</html>

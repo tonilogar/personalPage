@@ -1,0 +1,146 @@
+     body {
+      margin: 0;
+      font: 14px Helvetica;
+    }
+    .hero {
+      background: #23475b;
+      color: white;
+      padding: 32px 15px;
+      display: grid;
+      grid-template-columns: minmax(auto, 1024px);
+      justify-content: center;
+    }
+    .hero-container {
+      display: grid;
+      grid-template-columns: 70px 70px 70px 70px 70px;
+      grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px;
+      grid-template-areas: "user search search search language"
+                           "user-ul trabajo trabajo1 trabajo2  language-ul"
+                           ". trabajo3 trabajo4 trabajo5  ."
+                           ". . . .  ."
+                           ". . . .  ."
+                           ". . . .  ."
+                           ". . . .  ."
+                           ". footer footer footer .";
+      grid-gap: 10px;
+    }
+    .trabajo {
+      grid-area:trabajo;
+      max-width: 54px;
+      background-color: rgb(0, 162, 255);
+      
+    }
+    .trabajo1 {
+      grid-area:trabajo1;
+      max-width: 54px;
+      background-color: rgb(0, 162, 255);
+    }
+    .trabajo2 {
+      grid-area:trabajo2;
+      max-width: 54px;
+      background-color: rgb(0, 162, 255);
+    }
+    .trabajo3 {
+      grid-area:trabajo3;
+      max-width: 54px;
+      background-color: rgb(0, 162, 255);
+    }
+    .trabajo4 {
+      grid-area:trabajo4;
+      max-width: 54px;
+      background-color: rgb(0, 162, 255);
+    }
+    .trabajo5 {
+      grid-area:trabajo5;
+      max-width: 54px;
+      background-color: rgb(0, 162, 255);
+    }
+    .header-user-img {
+      width: 64px;
+    }
+    .header-user {
+      grid-area: user;
+    }
+    .header-user:hover{
+      cursor: pointer;
+  }  
+    .header-user-ul {
+      grid-area: user-ul;
+      position: absolute;
+	    display: none;
+	    list-style: none;
+      margin: 0px;
+      padding: 10px;
+      width: 100px;
+      text-align: left;  
+    }
+    .header-user-li:hover a{
+      text-decoration: underline;
+  }
+    .header-user-li a {
+      color: white;
+      text-decoration: none;
+    }
+    .header-user:hover ul, ul:hover {  
+      display: block;  
+  }
+    .header-search{
+      grid-area: search;
+      height: 5px;
+      padding: 20px;
+      border: solid cadetblue;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-language {
+      grid-area: language;
+    }
+    .header-language:hover{
+      cursor: pointer;
+  }
+    .header-language-img {
+     width: 54px;
+    }
+    .header-language-ul {
+      grid-area: language-ul;
+      display: none;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+	    text-align: left; 	
+    }
+    .header-language-li {
+      max-width: 54px;
+    }
+    .header-language:hover ul, ul:hover {  
+      display: block;  
+  }
+  
+  .header-language-li:hover img{
+      width: 52px;
+      height: 52px;
+  }
+    
+    
+    .footer {
+      grid-area: footer;
+      font-size: 15px;
+      font-weight: normal;
+      margin: 0;
+      display: flex;
+      align-items: stretch;    }
+    .footer a {
+      color: white;
+    }
+    
+    /*@media screen and (max-width: 768px) {
+      .hero-container {
+        grid-template-columns: 70px 1fr;
+        grid-template-areas: "badge title"
+                             "description description"
+                             "form form"
+                             "countdown countdown";
+      }
+    }*/

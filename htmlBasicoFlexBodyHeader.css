@@ -1,0 +1,199 @@
+/*El html ocupa todo el espacio y no tiene ningun borde*/
+*{
+	font-family: Roboto,sans-serif;
+}
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(./images/sentinel-2-example.jpg);
+}
+/*El body ocupa todo el espacio y no tiene ningun borde,activo flex "display: flex" 
+y el eje del contenido es flex-direction: column, body es el contenedor de header, .mai y footer*/
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+    flex-direction: column;
+}
+/*header es el primer elemento del contenedor body, ocupa el 10% del contenedor body
+no tiene ningun borde, activo flex "display: flex" y el eje del contenido es flex-direction: row
+header es el contenedor de .header-01, .header-01 y .header-01 */
+header {
+	
+	margin: 0px;
+	padding: 0px;
+    height: 100px;
+	order: 1;
+	display: flex;
+	flex-direction: row;
+}
+/* .header-logo es el primer elemento del contenedor header  */
+.header-logo {
+	order: 1; 
+}
+.header-logo-img {
+	width: 90px;
+    height: 90px;
+    margin: 0px;
+	padding-top: 5px;
+}
+/* .header-language es el segundo elemento del contenedor header  */
+.header-language {
+
+	order: 2; 
+}
+.header-language-img {
+    width: 85px;
+    height: 85px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.header-language-ul {
+	padding-left: 10px;
+    border: 0px ;
+	margin: 0px;
+	list-style: none;
+	display: none;
+}
+.header-language-li {
+    width: 85px;
+	height: 85px;	
+}
+.header-language:hover ul, ul:hover {  
+    display: block;  
+}
+
+.header-language-li:hover {  
+    height: 95px;
+    width: 95px;
+}
+.header-language-li:active {  
+    height: 80px;
+    width: 80px;
+}
+.header-language-img:hover {
+    cursor: pointer;
+}
+.header-language-li:hover {
+    cursor: pointer;
+}
+/* .header-search es el tercer elemento del contenedor header  */
+.header-search{
+    
+	order: 3;
+}
+.header-search-input{
+    height: 40px; 
+    width: 300px;
+    padding: 10px;
+    border: solid cadetblue;
+    margin: 20px;
+	border-radius: 35px;  
+	font-size: 20px;
+	font-family: Roboto,sans-serif;
+}
+/* .header-04 es el cuarto elemento del contenedor header  */
+.header-user {
+	
+	flex: 100%;
+	order: 4; 
+}
+.header-user:hover{
+    cursor: pointer;
+}
+.header-user-img{
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.header-user-ul{
+	display: none;
+	list-style: none;
+    margin: 0px 0px 0px -20px;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+	text-align: right; 
+	
+}
+.header-user:hover ul, ul:hover {  
+    display: block;  
+}
+.header-user-ul a{
+    text-decoration: none;
+}
+.header-user-li:hover a{
+    text-decoration: underline;
+}
+a {
+	color: white;
+	font-size: 20px;
+}
+/*.main es el segundo elemento del contenedor body, ocupa el 80% del contenedor body
+no tiene ningun borde, activo flex "display: flex" y el eje del contenido es flex-direction: row
+.main es el contenedor de .main-article, .main-nav y .main-aside */
+.main {
+	background: rgb(0, 255, 0);
+	margin: 0px;
+	padding: 0px;
+	flex: 80%;
+	order: 2;
+	display: flex;
+	flex-direction: row;
+}
+/* .main-article es el primer elemento del contenedor .main */
+.main-article {
+	background: #CFC;
+	flex: 60%;
+	order: 2;
+}
+/* .main-nav es el segundo elemento del contenedor .main */
+.main-nav {
+	background: #CCF;
+	flex: 20%;
+	order: 1;
+}
+/* .main-aside es el tercer elemento del contenedor .main */
+.main-aside {
+	background: #CCF;
+	flex: 20%;
+	order: 3;
+}
+/*.footer es el tercer elemento del contenedor body, ocupa el 10% del contenedor body
+no tiene ningun borde, activo flex "display: flex" y el eje del contenido es flex-direction: row
+.footer es el contenedor de .footer-terms , .footer-privacy y .footer-helpt */
+.footer {
+    background: rgb(255, 0, 0);
+	margin: 0px;
+	padding: 0px;
+	flex: 10%;
+	order: 3;
+    display: flex;
+	flex-direction: row;   
+}
+/* .footer-terms es el primer elemento del contenedor .footer */
+.footer-terms {
+    background-color: rgb(36, 23, 8);
+    flex: 25%;
+	order: 1;
+}
+/* .footer-privacy es el primer elemento del contenedor .footer */
+.footer-privacy {
+    background-color: rgb(197, 196, 255);
+    flex: 25%;
+	order: 2;
+}
+/* .footer-helpt es el primer elemento del contenedor .footer */
+.footer-helpt {
+    background-color: rgb(255, 196, 204);
+    flex: 25%;
+	order: 3;
+}
+

@@ -1,0 +1,177 @@
+html {
+    height:100%;
+    width:100%;
+}
+body {
+    background-image: url(./images/fondo.jpg);
+    margin: 0px;
+    padding: 0px;
+    background-size:100% 180%;
+}
+  
+header{
+    
+}
+.header-user {
+	
+}
+.header-user:hover{
+    cursor: pointer;
+}
+.header-user-img{
+    height: 54px;
+    width: 54px;
+    grid-area: header-user-img;
+}
+.header-user-ul{
+	display: none;
+	list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;	
+}
+.header-user:hover ul, ul:hover {  
+    display: block;  
+}
+.header-user-ul a{
+    text-decoration: none;
+}
+.header-user-li:hover a{
+    text-decoration: underline;
+}
+.header-user-li a {
+	color: white;
+}
+.header-search{ 
+   
+}
+.header-search-input{
+    height: 40px; 
+    padding: 10px;
+    border: solid cadetblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 35px; 
+    grid-area: header-search-input; 
+}
+
+.header-language {
+    
+}
+.header-language:hover{
+    cursor: pointer;
+}
+.header-language-img{
+    height: 54px;
+    width: 54px;
+}
+.header-language-li{
+    height: 54px;
+    width: 54px;
+    text-align: left;
+}
+.header-language-ul{
+    position: absolute;
+	display: none;
+	list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+	 	
+}
+.header-language:hover ul, ul:hover {  
+    display: block;  
+}
+
+.header-language-li:hover img{
+    height: 56px;
+    width: 56px;
+}
+.header-language-li a {
+	color: white;
+}
+
+/* .header-04 es el cuarto elemento del contenedor header  */
+
+.main {
+   
+   }
+ 
+.main article {
+   
+   
+   }
+
+.trabajo {
+    background-color: rgb(2, 2, 235);
+    opacity: 0.5;
+    height: 54px;
+    width: 54px;
+    padding: 10px;
+    border: 1px solid #cccc33;
+    border-radius: 7pt;
+    margin: 10px;	
+ }
+ .trabajo a{
+   text-decoration: none;
+ }
+ .trabajo a:hover{
+    text-decoration: underline;
+  }
+ 
+ .trabajo:hover {
+     opacity: 1;
+     cursor: pointer;
+ }
+
+.main aside {
+   margin: 0px;
+   padding: 0px;
+   }
+.main aside p, ul, a{
+    color: white;
+    font: 24px Helvetica;
+    text-decoration: none;
+}
+.main aside a:hover{
+    text-decoration: underline;
+}
+
+footer {
+   display: block;
+   margin: 0px;
+   padding: 0px;
+   }
+   footer a{
+    text-decoration: none;
+    padding: 10px;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }
+ 
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 64px 64px 64px 64px 64px;
+    grid-template-rows: 64px 64px 64px 64px 64px 64px 64px 64px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    grid-template-areas: "header-language header-search-input header-search-input header-search-input header-user-img"
+                         ".    .       .         .    ."
+                         ". trabajo trabajo1 trabajo2 ."
+                         ". trabaj3 trabajo4 trabajo5 main-aside"
+                         ".    .       .         .    main-aside"
+                         ".    .       .         .    main-aside"
+                         ".  main-footer main-footer main-footer  .";
+}
+
+  /* Too narrow to support three columns
+  @media all and (max-width: 320px) {
+  
+
+  } */

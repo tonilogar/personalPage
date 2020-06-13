@@ -1,0 +1,113 @@
+body {
+    margin: 5px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(./images/fondoMobil.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;  
+    background-size:100% 100%; 
+}
+.container {
+    display: grid;
+    grid-template: auto 20px 25px 20px 25px 10px 50px 20px 20px  50px 100px   1fr 20px 20px/ auto ;
+    height: 100vh;
+    grid-template-areas: 
+    "  header "
+    "  labelUserName "
+    "  inputUserName "
+    "  labelPassword "
+    "  inputPassword "
+    "  .  "           
+    "  buttonLogin "
+    "  labelFPassword "
+    "  . "
+    "  buttonHome "
+    "  logo "
+    "  . "
+    "  footer "
+    "  . ";
+}
+
+.header{
+  grid-area: header;
+  font-size: 10px;
+  justify-self: center;
+}
+h1{
+  margin-top: 0px;
+}
+.labelUserName{
+  grid-area: labelUserName;
+  padding: 0px 10px 0px 2px;
+}
+.inputUserName{
+  grid-area: inputUserName;
+  padding: 10px 10px 0px 2px;
+}
+.labelPassword{
+  grid-area: labelPassword;
+  padding: 0px 10px 0px 2px;
+}
+.inputPassword{
+  grid-area: inputPassword;
+}
+.labelFPassword{
+  grid-area: labelFPassword;
+  justify-self: center;
+}
+.buttonLogin{
+  grid-area: buttonLogin;
+  border-radius: 6px;
+  border-bottom: 2px solid #7f7f80;
+  height: 40px;
+  width: 300px;
+  justify-self: center;
+}
+.buttonLogin:hover{
+  cursor: pointer;
+}  
+.buttonHome{
+  grid-area: buttonHome;
+  border-radius: 6px;
+  border-bottom: 2px solid #7f7f80;
+  width: 300px;
+  height: 40px;
+  justify-self: center;
+}
+.buttonHome a{
+  color: black;
+  text-decoration: none;
+}
+.buttonHome:hover{
+  cursor: pointer;
+} 
+.logo{
+  grid-area: logo;
+  width: 80px;
+  padding-top: 5px;
+  justify-self: center;
+}
+.footer{
+  grid-area: footer;
+  justify-self: center;
+}
+.footer a{
+  color: black;
+  text-decoration: none;
+}
+.footer a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+} 
+
+@media screen and (min-width: 768px) {
+    body {
+      background-image: url(./images/fondo.jpg);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-size:100% 100%;
+  }
+}
